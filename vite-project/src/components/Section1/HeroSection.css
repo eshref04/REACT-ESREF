@@ -1,0 +1,38 @@
+
+
+.hero__section{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+   
+    background-image: url("https://zyan.vercel.app/images/bg/banner.jpg");
+    color: white;
+}
+
+
+
+.hero__section__head{
+    gap: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__section__head h1{
+    font-size: 55px !important;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero__section__head p{
+    font-weight: 500;
+    margin-bottom: 65px;
+    font-size: 16px;
+    color: #A2A2A2;
+    font-family: "Poppins", sans-serif;
+    
+}
