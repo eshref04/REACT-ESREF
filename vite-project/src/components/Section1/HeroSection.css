@@ -1,38 +1,188 @@
+.hero__section {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://zyan.vercel.app/images/bg/banner.jpg");
+  color: white;
+}
 
+.hero__section .container {
+  display: flex;
+  justify-content: space-between;
+  
+}
 
-.hero__section{
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    width: 100%;
-    height: 100vh;
-    
-    display: flex;
-    align-items: center;
-   
-    background-image: url("https://zyan.vercel.app/images/bg/banner.jpg");
+.hero__section__head {
+  gap: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__section__head h1 {
+  font-size: 55px !important;
+  font-weight: 700;
+}
+
+.hero__section__head p {
+  font-weight: 500;
+  margin-bottom: 65px;
+  font-size: 16px;
+  color: #a2a2a2;
+}
+
+.hero__section__head__span {
+  color: #55e6a5;
+  display: inline-block;
+  -webkit-animation: flip-horizontal-top 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	        animation: flip-horizontal-top 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.hero__section__btn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero__section__btn a {
+  text-decoration: none;
+}
+
+.hero__section__btn__download {
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  background-color: #55e6a5;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s linear;
+}
+
+.hero__section__btn__download:hover{
+    background: #141c27;
     color: white;
 }
 
+.hero__section__btn__play {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: white;
+}
+
+.hero__section__btn__play__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  background-color: #55e6a5;
+  color: black;
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.hero__section__right {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://zyan.vercel.app/images/shapes/banner_shape.png");
+  padding: 26px;
+  animation: myAnim 7s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+@-webkit-keyframes flip-horizontal-top {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
+@keyframes flip-horizontal-top {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
 
 
-.hero__section__head{
-    gap: 26px;
-    display: flex;
+
+@media screen and (max-width: 1252px) {
+  .hero__section__right {
+    display: none;
+  }
+
+  .hero__section .container {
+    width: 650px;
+    padding: 0px 0px 0px 30px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .hero__section__btn {
     flex-direction: column;
-}
+    align-items: flex-start;
+  }
 
-.hero__section__head h1{
-    font-size: 55px !important;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-}
+  .hero__section__head p {
+    font-size: 12px;
+  }
 
-.hero__section__head p{
-    font-weight: 500;
-    margin-bottom: 65px;
-    font-size: 16px;
-    color: #A2A2A2;
-    font-family: "Poppins", sans-serif;
+  .hero__section .container {
+    width: 500px;
     
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__section .container {
+    width: 300px;
+    padding-top: 40px;
+  }
 }

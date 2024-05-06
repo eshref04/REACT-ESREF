@@ -1,0 +1,170 @@
+.section3{
+    width: 100%;
+    background: #02050a;
+    padding: 100px;
+    
+}
+.section3Con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: "Poppins", sans-serif;
+}
+.section3Left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    gap: 30px;
+}
+.section3Left h2{
+    font-size: 50px;
+}
+.section3Left h2 span{
+    font-size: 70px;
+}
+.section3Cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+.section3Card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background: #09101a;
+    width: 300px;
+}
+.section3Right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    background: #09101A;
+}
+.section3Right h2{
+    color: white;
+    font-size: 40px;
+}
+.section3Right p{
+    color: gray;
+    font-size: 16px;
+}
+.section3Right form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    padding:0px 30px 0px 0px;
+}
+.section3Right form input,textarea{
+    padding: 15px;
+    border: 1px solid #55e6a5;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+.section3Right form input::placeholder,.section3Right form textarea::placeholder{
+    color: rgba(211, 211, 211, 0.817);
+    font-weight: bold;
+}
+
+
+.form .textarea{
+    height: 200px;
+    resize: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.section3Right button {
+   
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #55e6a5;
+    color: #02050a;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.section3Right button:hover{
+    background: #141c27;
+    color: white;
+}
+
+@media only screen and (max-width: 1367px) {
+  .section3 .container{
+    width: 700px;
+  }
+
+  .section3Con{
+    flex-direction: column;
+  }
+
+  .section3Cards{
+    display: none;
+}
+  }
+
+@media only screen and (max-width: 820px) {
+    .section3Con{
+        flex-direction: column;
+    }
+
+    .section3 .container{
+        width: 300px;
+      }
+    .section3Left{
+        width: 100%;
+    }
+    .section3Right{
+        width: 100%;
+    }
+    .section3Left h2{
+        font-size: 30px;
+    }
+    .section3Left h2 span{
+        font-size: 50px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .section3Cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section3Left h2{
+        font-size: 20px;
+    }
+    .section3Left h2 span{
+        font-size: 30px;
+    }
+
+   
+  }
+
+  @media only screen and (max-width: 407px){
+    .section3 .container{
+        width: 180px;
+       }
+  }

@@ -1,0 +1,253 @@
+.blog__section {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 45px !important;
+  padding-top: 125px !important;
+  background-color: #02050a;
+}
+
+.blog__section__above {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__section__head h5 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  color: #55e6a5;
+  margin-bottom: 20px;
+}
+
+.blog__section__head h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: white;
+}
+
+.blog__section__above button {
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  background-color: #55e6a5;
+  font-weight: 600;
+  color: black;
+  height: 64px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s linear 0s;
+}
+
+.blog__section__above button:hover {
+  background: #141c27;
+  color: white;
+}
+
+.blog__section__above__btn {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.blog__section__down {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 30px;
+}
+
+.blog__section__down__image {
+  position: relative;
+}
+
+.blog__section__down__desc {
+  position: absolute;
+  width: 90%;
+  padding: 20px;
+  background-color: #09101a;
+  text-align: center;
+
+  left: 17px;
+  bottom: -76px;
+}
+
+.blog__section__down__desc__list {
+  list-style: none;
+  color: white;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.blog__section__down__desc__list i {
+  color: #55e6a5;
+  margin-right: 6px;
+}
+
+.blog__section__down__desc span {
+  font-size: 16px;
+  padding: 13px 17px;
+  width: 200px;
+  font-weight: 500;
+  display: inline-block;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #02050a;
+  background-color: #55e6a5;
+}
+
+.blog__section__down__desc a {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s linear;
+}
+
+.blog__section__down__desc a:hover {
+  color: #55e6a5;
+}
+
+.blog__section__down__image{
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blog__section__down__image img{
+  transition: 0.7s linear;
+}
+
+.blog__section__down__image:hover img{
+  transform: scale(1.1);
+  
+}
+
+
+@media screen and (max-width: 1336px) {
+    .blog__section {
+      padding-top: 90px !important;
+      padding-bottom: 30px !important;
+    }
+
+    .blog__section .container{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 930px;
+    }
+     
+  
+    .blog__section__head h2 {
+      font-size: 40px;
+    }
+  
+    .blog__section__above {
+      flex-direction: column;
+      align-items: flex-start;
+      display: flex;
+      gap: 20px;
+    }
+  
+    .blog__section__above button {
+      padding: 15px 30px;
+      height: auto;
+      font-size: 14px;
+    }
+  
+    .blog__section__down {
+      flex-direction: column;
+      gap: 80px;
+      display: flex;
+      align-items: center;
+      
+    }
+  
+    .blog__section__down__image {
+      width: 100%;
+    }
+  
+    .blog__section__down__desc {
+      width: 90%;
+      left: 20px;
+      bottom: -66px;
+    }
+  
+    .blog__section__down__desc span {
+      font-size: 14px;
+      padding: 10px 15px;
+      width: auto;
+      top: -20px;
+    }
+  }
+  
+  
+@media screen and (max-width: 942px) {
+    .blog__section {
+      padding-top: 70px !important;
+      padding-bottom: 20px !important;
+    }
+  
+   .blog__section .container{
+    width: 600px;
+    margin: 0px auto;
+    
+   }
+
+    .blog__section__head h2 {
+      font-size: 32px;
+    }
+  
+    .blog__section__above {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .blog__section__above button {
+      padding: 12px 24px;
+      height: auto;
+      font-size: 12px;
+    }
+  
+    .blog__section__down {
+      flex-direction: column;
+      gap: 70px;
+    }
+  
+    .blog__section__down__image {
+      width: 100%;
+    }
+  
+    .blog__section__down__desc {
+      width: calc(100% - 20px);
+      left: 10px;
+      bottom: -56px;
+    }
+  
+    .blog__section__down__desc span {
+      font-size: 12px;
+      padding: 8px 12px;
+      width: auto;
+      top: -16px;
+    }
+  }
+  
+  @media screen and (max-width: 617px){
+    .blog__section .container{
+        width: 300px;
+        margin: 0px auto;
+    }
+
+    .blog__section__down__image img{
+       width: 300px;
+    }
+  }
+
+ 

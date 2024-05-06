@@ -1,62 +1,90 @@
-nav .container{
-    width: 1250px;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #141C27;
-    color: white;
-    height: 80px;
-    position: fixed;
-    top: 0;
+nav .container {
+  width: 1250px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141c27;
+  color: white;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__left {
+  height: 80px !important;
+}
+
+.nav__menu {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav__menu li a {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 12px;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  transition: 0.3s linear;
+}
+
+.nav__menu li a:hover {
+  color: #55e6a5;
+}
+
+.nav__right {
+  background-color: #55e6a5;
+  font-size: 30px;
+  cursor: pointer;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  line-height: 80px;
+  color: black;
 }
 
 
-.nav__left{
-    height: 80px !important;
-}
-
-
-.nav__menu{
-    display: flex;
-    list-style-type: none;
-    gap: 40px;
-    align-items: center;
-}
-
-.nav__menu li a{
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 12px;
-    color: white;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    transition: 0.3s linear;
-}
-
-.nav__menu li a:hover{
-    color: #55E6A5;
-}
-
-
-.nav__right{
-   background-color: #55E6A5; 
-   font-size: 30px;
-   cursor: pointer;
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    line-height: 80px;
-    color: black;
-}
+@media screen and (max-width: 1252px) {
+    nav .container {
+      width: 700px;
+      margin: 0px auto;
+      
+    }
+  
+    .nav__menu {
+     
+      display: none;
+    }
+  
+    .nav__right {
+      width: 60px; 
+      font-size: 24px; 
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    nav .container {
+      width: 300px;
+      margin: 0px auto;
+      
+    }
+  
+    
+  }
+  

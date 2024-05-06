@@ -1,0 +1,104 @@
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+p,h2,h3,h5{
+    font-family: "Poppins", sans-serif;
+}
+.skillsect{
+    background-color: #09101a;
+}
+.skillsheading-first h5{
+    color: #55e6a5;
+}
+.skillsheading-two h3{
+    color: white;
+}
+.skillsheading{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skillsheading-first h5{
+    font-size: 20px;
+    margin-top: 150px;
+}
+.skillsheading-two h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+.skillscards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skillcard{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.skillcard-year{
+    padding: 11px 24px;
+    border: 1px solid #55e6a5;
+    display: inline-block;
+    color: #55e6a5;
+}
+.skillcard-subtitle{
+    color: #a2a2a2;
+}
+.languagecards{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+.skillcard h3{
+    color: white;
+    font-size: 30px;
+font-weight: 600;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+.languagecard{
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #151c25;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #55e6a5;
+}
+.languagecard p{
+    color: white;
+}
+
+@media only screen and (max-width: 1367px) {
+    .skillsect .container{
+        width: 700px;
+        flex-direction: column;
+    }
+    }
+
+    @media only screen and (max-width: 820px) {
+        .skillsect .container{
+            width: 300px;
+
+        }
+
+        .skillscards{
+            display: flex;
+            gap: 20px;
+        }
+
+        .skillsheading h2{
+            font-size: 24px;
+        }
+        }

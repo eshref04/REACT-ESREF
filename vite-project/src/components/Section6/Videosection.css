@@ -1,0 +1,78 @@
+.videosect{
+    background-color: #02050a;
+}
+p,h2,h3,h5{
+    font-family: "Poppins", sans-serif;
+}
+h5{
+    color: #55e6a5;
+}
+h2{
+    color: white;
+}
+.videosheading-first h5{
+    font-size: 20px;
+    padding-top: 100px;
+}
+.videosheading-two h2{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+.videocards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    padding-bottom: 110px;
+}
+.videocard{
+    position: relative;
+    width: 100%;
+}
+.videocard img{
+    overflow: hidden;
+    height: 550px;
+    width: 100%;
+}
+.videocard a:hover{
+    cursor: pointer;
+}
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    display: none;
+}
+.text::after{
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+.videocard a:hover .text{
+    top: 50%;
+  left: 50%;
+  opacity: 1;
+  display: block;
+}
+
+@media only screen and (max-width: 1367px) {
+    .videosect .container{
+        width: 700px;
+    }
+    }
+
+    @media only screen and (max-width: 820px) {
+        .videosect .container{
+            display: none;
+        }
+
+        }

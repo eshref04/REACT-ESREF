@@ -1,0 +1,119 @@
+.subs__section {
+  background-image: url("https://zyan.vercel.app/images/bg/subscribe.jpg");
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  padding: 150px 0px 150px 0px;
+
+  position: relative;
+}
+
+.subs__section .container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.subs__section h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+  color: white;
+  z-index: 1;
+}
+
+.subs__section__btn {
+  position: relative;
+  width: 636px;
+}
+
+.subs__section__btn input {
+  border: 1px solid #55e6a5;
+  padding: 27px 25px;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  background: #131313;
+  width: 100%;
+  outline: none;
+}
+
+.subs__section__btn button {
+  position: absolute;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #55e6a5;
+  color: #02050a;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear 0s;
+}
+
+.subs__section__btn button:hover {
+  background: #141c27;
+  color: white;
+}
+
+.subscribe__overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #000000e3;
+}
+
+@media screen and (max-width: 1268px) {
+  .subs__section .container{
+      width: 900px;
+      margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 942px) {
+    .subs__section .container{
+        width: 600px;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width: 677px) {
+    .subs__section .container{
+        width: 300px;
+        margin: 0px auto;
+    }
+
+    .subs__section__btn {
+        width: calc(100% - 20px); 
+        max-width: 636px; 
+        margin: 0 auto; 
+        
+      }
+    
+      .subs__section__btn button {
+        width: 20%;
+        height: 56px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+}
+
+
+  
